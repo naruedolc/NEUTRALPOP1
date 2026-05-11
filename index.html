@@ -899,7 +899,7 @@
 
   .about-quote {
     margin-top: 32px;
-    padding: 26px 28px;
+    padding: 44px 28px 44px;
     background: var(--paper);
     border-radius: 16px;
     border: 1px solid var(--line);
@@ -908,14 +908,24 @@
   .about-quote::before {
     content: "“";
     position: absolute;
-    top: -10px;
+    top: 4px;
     left: 22px;
     font-family: var(--display);
     color: var(--red);
-    font-size: 64px;
+    font-size: 56px;
     line-height: 1;
-    background: var(--bone);
-    padding: 0 10px;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .about-quote::after {
+    content: "”";
+    position: absolute;
+    bottom: -22px;
+    right: 22px;
+    font-family: var(--display);
+    color: var(--red);
+    font-size: 56px;
+    line-height: 1;
     font-style: italic;
     font-weight: 300;
   }
